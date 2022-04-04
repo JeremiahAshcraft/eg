@@ -1,0 +1,261 @@
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4,
+h5 {
+  font-size: 2.4rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: rgb(76, 137, 211, .9);
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(76, 137, 211);
+}
+
+/* Nav Section with Hero */
+
+.main-header {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: .12rem;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .2), transparent), url('/resources/img/mountcity.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/*About section */
+
+.about-head {
+  min-height: 100vh;
+  background: radial-gradient(rgba(0, 0, 0, .7), transparent), url('/resources/img/tree.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-paragraph {
+  width: 60%;
+  padding: 1rem;
+  font-size: 2.2rem;
+}
+
+/*Contact Section */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/resources/img/phoneblack.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: d1d1d1;
+  margin: 0;
+}
+
+.form {
+  background: rgba(249, 250, 251, .9);
+  width: 40%;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.form-control label {
+  display: block;
+  padding-top: 3rem;
+  padding-bottom: .5rem;
+}
+
+.form-control textarea,
+.form-control input {
+  display: block;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  font-size: 1.25rem;
+  padding-top: .1em;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+form h2 {
+  text-align: center;
+}
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-span {
+  font-family: 'Kanit', sans-serif;
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 950px) {
+
+  html {
+    font-size: 70%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+
+  .form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 45%;
+  }
+
+}

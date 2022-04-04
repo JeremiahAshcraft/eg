@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <title>Electric Goon | Web Design</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav>
+      <h1 id="logo">Electric Goon Web Design</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+    <h2>Design Your Journey</h2>
+    <h3>It's not just a website. It's the next step on your road to success.</h3>
+    <a href="#contact"><button id="start-btn">Start Here</button></a>
+  </section>
+  <section id="about">
+    <header class="about-head">
+      <h2>About Electric Goon</h2>
+      <p class="about-paragraph">
+        I’m Jeremiah with Electric Goon – A web design business based in Louisville, KY.
+      </p>
+      <p class="about-paragraph">
+        Whether it’s a person or a company, I love seeing growth. And more than anything, I love being a part of that
+        growth.
+        Building tools that will turn your home business into an internet business or allow you to etch out a greater
+        presence online opens the door to far more opportunities and even bigger rewards.
+      </p>
+    </header>
+  </section>
+  <section class="container" id="contact">
+    <form action="https://formspree.io/f/xlezwvwg" method="POST" id="form" class="form">
+      <h2>Contact Me</h2>
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="_replyto">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="message">Message</label>
+        <textarea type="text" id="message" name="message" rows="6" max-length="3000"></textarea>
+        <small>Error message</small>
+      </div>
+      <button class="form-button" type="submit" value="send">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <div class="footer-wrapper">
+      <h5><span id="footer-span">Electric Goon Web Design</span> &copy; 2022</h5>
+    </div>
+  </footer>
+  <script src="resources/js/app.js"></script>
+</body>
+
+</html>
